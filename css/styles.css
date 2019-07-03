@@ -1,0 +1,263 @@
+/* throughout all pages */
+
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  background-color: #242D34;
+  color: #D0DFD6;
+}
+
+.page-header {
+  text-align: center;
+  padding: 20px;
+}
+
+/* navbar */
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.buttons {
+  float: right;
+  padding-right: 32px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #242D34;
+}
+
+.brand {
+  overflow: hidden;
+  font-size: 18pt;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #D0DFD6;
+  text-align: center;
+  padding: 14px 32px;
+  text-decoration: none;
+}
+
+.brand li a {
+  padding: 8px 32px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #D0DFD6;
+  color: #5A7C7E;
+  text-decoration: none;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow:  10px 18px 26px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #5A7C7E;
+  color: #242D34;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: green;
+}
+
+/* index.html page */
+
+#landingimage {
+  width: 100%;
+}
+
+#intro {
+  padding-bottom: 0px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#intro p {
+  font-size: 20px;
+  text-align: center;
+}
+
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.fa {
+  align-items: center;
+  border-radius: 6px;
+  display: flex;
+  height: 42px;
+  justify-content: center;
+  margin: 0 30px 0 0;
+  width: 40px;
+}
+
+img {
+  display: inherit;
+  max-width: 100%;
+}
+
+/* grid layout for time page */
+
+.col-md-4 {
+  text-align: center;
+  align: center;
+  padding: 50px;
+}
+
+.col-md-4 img {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*grid layout for contact page */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 10px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+#content {
+  margin-top: 50px;
+}
+
+/*subscription section*/
+
+
+#subscribe {
+  text-align: center;
+  align-items: center;
+}
+
+label {
+  font-size: 20px;
+}
+
+.form-control {
+  width: 50%;
+}
+
+.box{
+    position: relative;
+    display: inline-block; /* Make the width of box same as image */
+    width: 100%;
+}
+.box .text{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 40%;/* Adjust this value to move the positioned div up and down */
+    text-align: center; /* Set the width of the positioned div */
+    font-size: 40px;
+    color: #BC352F;
+}
+
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.fa {
+  align-items: center;
+  border-radius: 6px;
+  display: flex;
+  height: 42px;
+  justify-content: center;
+  margin: 0 30px 0 0;
+  width: 40px;
+}
+
+img {
+  display: inherit;
+  max-width: 100%;
+}
+
+#carouselExampleIndicators {
+  max-width: 1062px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 62px;
+}
+
+.carousel-content {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  z-index: 20;
+  color: #BC352F;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+}
+
+.carousel-item {
+  background-image: url("../images/background_imagebr.jpg");
+  height: 564px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.carousel-item h1{
+  vertical-align: middle;
+}

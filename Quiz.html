@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>PODSPO</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+
+    <div id="navbar">
+    <ul class="buttons">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Filter By</a>
+        <div class="dropdown-content">
+          <a href="mood.html">Mood</a>
+          <a href="time.html">Time</a>
+        </div>
+      </li>
+      <li><a href="Quiz.html">Quiz</a></li>
+      <li><a href="Live.html">Live</a></li>
+      <li><a href="contact.html">About Us</a></li>
+    </ul>
+    <ul class="brand">
+      <li><a href="#">PODSPO</a></li>
+    </ul>
+    </div>
+<div class="center">
+<div id="content">
+  <div class="container-fluid">
+      <h1 class="page-header">HOW MUCH DO YOU KNOW ABOUT PODCASTS? </h1>
+
+ <div class="d-flex justify-content-center align-items-center container ">
+<form id = "quiz" name = "quiz">
+
+<h4 class = "questions">What is the most popular podcast genre?</h4>
+<input type = "radio" id = "mc" name = "question1" value = "Comedy"> Comedy <br>
+<input type = "radio" id = "mc" name = "question1" value = "Sports"> Sports <br>
+<input type = "radio" id = "mc" name = "question1" value = "Crime"> Crime<br>
+
+<br>
+<br>
+
+<h4 class = "questions">What age group listens to podcasts the most? </h4>
+<input type = "radio" id = "mc" name = "question2" value = "50+"> Over 50  <br>
+<input type = "radio" id = "mc" name = "question2" value = "Under 35"> Under 35 <br>
+<input type = "radio" id = "mc" name = "question2" value = "under 18"> under 18 <br>
+
+<br>
+<br>
+
+<h4 class = "questions">How many active podcasts currently exist?</h4>
+<input type = "radio" id = "mc" name = "question3" value = "1,000,000"> 1,000,000  <br>
+<input type = "radio" id = "mc" name = "question3" value = "750,000"> 750,000<br>
+<input type = "radio" id = "mc" name = "question3" value = "300,000"> 300,000 <br>
+
+<br>
+<br>
+
+<h4 class = "questions">What is the most popular way of listening to a podcast?</h4>
+<input type ="radio" id = "mc" name = "question4" value = "Computer"> Computer <br>
+<input type ="radio" id = "mc" name = "question4" value = "Tablet"> Tablet <br>
+<input type ="radio" id = "mc" name = "question4" value = "Smartphone"> Smartphone <br>
+
+<br>
+<br>
+
+<h4 class = "questions">Where do most people listen to podcasts?</h4>
+<input type ="radio" id = "mc" name = "question5" value = "At work"> At work <br>
+<input type ="radio" id = "mc" name = "question5" value = "At home"> At home<br>
+<input type ="radio" id = "mc" name = "question5" value = "The car"> The car <br>
+
+<br>
+<br>
+
+<h4 class = "questions">What is the average number of podcasts listeners are subscribed to?</h4>
+<input type ="radio" id = "mc" name = "question6" value = "3"> 3 <br>
+<input type ="radio" id = "mc" name = "question6" value = "6"> 6<br>
+<input type ="radio" id = "mc" name = "question6" value = "Over 10"> Over 10 <br>
+<br>
+<br>
+<h4 <p class = "questions">What is the most popular radio programme and podcast in the UK?</h4>
+<input type ="radio" id = "mc" name = "question7" value = "Woman's Hour"> Woman's Hour <br>
+<input type ="radio" id = "mc" name = "question7" value = "Desert Island Discs"> Desert Island Discs<br>
+<input type ="radio" id = "mc" name = "question7" value = "Football Daily"> Football Daily <br>
+
+<br>
+<br>
+
+<input id = "button" type = "button" value = "I'm finished!" onclick = "check()";>
+
+</form>
+
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+<img id = "picture">
+</div>
+</div>
+</div>
+</div>
+</html>
+
+</body>
